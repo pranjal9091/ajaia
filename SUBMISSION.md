@@ -7,7 +7,7 @@
 **Live Deployed URL:** [https://ajaia-xi.vercel.app](https://ajaia-xi.vercel.app)  
 **Local Preview URL:** [http://localhost:3000](http://localhost:3000)  
 **Walkthrough Video Script:** [WALKTHROUGH_SCRIPT.md](WALKTHROUGH_SCRIPT.md)  
-**Walkthrough Video Link:** [VIDEO_URL.txt](VIDEO_URL.txt)  
+**Walkthrough Video Link:** [https://youtu.be/XQux57a8qR4](https://youtu.be/XQux57a8qR4)  
 
 ---
 
