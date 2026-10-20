@@ -27,6 +27,67 @@
   ],
   "documents": [
     {
+      "id": "doc_1792478457854_stdcs",
+      "title": "Sprint Retrospective",
+      "content": "<h1>Sprint Retrospective</h1><p><strong>Sprint:</strong> 24 &nbsp;|&nbsp; <strong>Facilitator:</strong> Team Lead</p><hr><h2>🟢 What Went Well</h2><ul><li><p>Fast delivery speed using modern full-stack patterns.</p></li><li><p>Clean separation of UI, API handlers, and data persistence.</p></li></ul><h2>🟡 What Could Be Improved</h2><ul><li><p>Add real-time websocket presence cursors in the next iteration.</p></li></ul><h2>🎯 Action Items</h2><ol><li><p>Polish README and deployment steps.</p></li></ol>",
+      "ownerId": "user_charlie",
+      "createdAt": "2026-10-20T06:40:57.853Z",
+      "updatedAt": "2026-10-20T06:40:58.649Z",
+      "wordCount": 50,
+      "characterCount": 342,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792478454654_nbm4h",
+      "title": "Product Requirement Doc (PRD)",
+      "content": "<h1>PRD: Next-Generation Collaborative Editor</h1><p><strong>Author:</strong> Product Team &nbsp;|&nbsp; <strong>Target Quarter:</strong> Q4</p><hr><h2>1. Problem Statement</h2><p>Distributed product teams struggle with document fragmentation and complex permission management across multiple tools.</p><h2>2. User Stories</h2><ul><li><p><strong>As a writer</strong>, I want rich text formatting with zero lag so I can capture ideas effortlessly.</p></li><li><p><strong>As an owner</strong>, I want to control who can edit versus view my sensitive documents.</p></li><li><p><strong>As a reviewer</strong>, I want to upload reference attachments directly alongside the doc.</p></li></ul><h2>3. Technical Architecture</h2><pre><code>// Client &lt;-&gt; Server Data Flow\nUI (TipTap) -&gt; Debounced Auto-Save -&gt; REST API -&gt; Atomic JSON/SQLite Persistence</code></pre>",
+      "ownerId": "user_charlie",
+      "createdAt": "2026-10-20T06:40:54.654Z",
+      "updatedAt": "2026-10-20T06:40:55.452Z",
+      "wordCount": 100,
+      "characterCount": 662,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792478427740_carhy",
+      "title": "Weekly Team Sync",
+      "content": "<h1>Weekly Team Sync</h1><p><strong>Date:</strong> 20/10/2026 &nbsp;|&nbsp; <strong>Attendees:</strong> Engineering &amp; Product</p><hr><h2>1. Agenda &amp; Updates</h2><ul><li><p>Ship collaborative document platform v1 milestone.</p></li><li><p>Review UX feedback on share access models.</p></li><li><p>Sprint planning and backlog prioritization.</p></li></ul><h2>2. Open Discussion &amp; Decisions</h2><blockquote><p>Decision: Standardize permissions into Owner, Editor, and Viewer tiers for maximum clarity.</p></blockquote><h2>3. Action Items</h2><ol><li><p>Finalize automated test coverage and documentation.</p></li><li><p>Verify file upload streaming endpoints.</p></li><li><p>Record 3-minute product walkthrough.</p></li></ol>",
+      "ownerId": "user_charlie",
+      "createdAt": "2026-10-20T06:40:27.740Z",
+      "updatedAt": "2026-10-20T06:40:28.531Z",
+      "wordCount": 67,
+      "characterCount": 518,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792478386848_huq15",
+      "title": "Blank Document",
+      "content": "<ol><li><p>hfidfhfedfb<mark>jbfjefer</mark><strong><mark>jfejfjef</mark><em><mark>jfrjkndfkdfm</mark></em></strong></p></li><li><p></p></li></ol><p></p>",
+      "ownerId": "user_charlie",
+      "createdAt": "2026-10-20T06:39:46.848Z",
+      "updatedAt": "2026-10-20T06:40:14.624Z",
+      "wordCount": 4,
+      "characterCount": 42,
+      "shares": [
+        {
+          "id": "share_1792478423149_ei4x",
+          "documentId": "doc_1792478386848_huq15",
+          "userId": "user_bob",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T06:40:23.149Z",
+          "sharedBy": "user_charlie"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
       "id": "doc_1792477872527_x1vrq",
       "title": "Attachment Test Doc",
       "content": "<p>Document with attachments</p>",
@@ -279,27 +340,19 @@
     {
       "id": "doc_1",
       "title": "🚀 Ajaia Product Spec: AI-Assisted Document Platform",
-      "content": "<h1>Ajaia Product Spec: AI-Assisted Document Platform</h1>\n<p><strong>Status:</strong> In Review &nbsp;|&nbsp; <strong>Author:</strong> Alice Walker &nbsp;|&nbsp; <strong>Target Release:</strong> Q4 2026</p>\n<hr />\n<h2>1. Executive Summary</h2>\n<p>Modern product teams lose dozens of hours every sprint bouncing between disconnected tools for drafting specs, design reviews, and engineering RFCs. <em>Ajaia Docs</em> unifies rich collaborative drafting, structured file attachments, and instant teammate sharing into a single, cohesive canvas.</p>\n<blockquote>\n  <p>\"Our goal is to make document creation as fast as thinking, with zero friction in teammate handoffs.\"</p>\n</blockquote>\n<h2>2. Core Functional Requirements</h2>\n<ul>\n  <li><strong>Rich Formatting Engine:</strong> Headings, clean typography, bold/italic accents, formatted lists, and code blocks.</li>\n  <li><strong>Native File Imports:</strong> Direct ingestion of Markdown and plaintext files straight into editable live docs.</li>\n  <li><strong>Lightweight Access Control:</strong> Distinct Owner, Editor, and Viewer permissions with real-time UI state reflect.</li>\n  <li><strong>Resilient Local Persistence:</strong> Automated debounced saving ensuring zero state loss across reloads.</li>\n</ul>\n<h2>3. Key Success Metrics</h2>\n<ol>\n  <li>Document creation time decreased by <strong>45%</strong>.</li>\n  <li>Cross-functional review turnaround within <strong>24 hours</strong>.</li>\n  <li>Zero accidental document overwrite incidents via explicit access roles.</li>\n</ol>\n<pre><code>// Example Share Payload Contract\nPOST /api/documents/doc_1/share\n{\n  \"targetEmail\": \"bob@ajaia.io\",\n  \"accessLevel\": \"editor\"\n}</code></pre>\n<p>Please review and leave feedback or suggest edits directly!</p>",
+      "content": "<h1>Ajaia Product Spec: AI-Assisted Document Platform</h1><p><strong>Status:</strong> In Review &nbsp;|&nbsp; <strong>Author:</strong> Alice Walker &nbsp;|&nbsp; <strong>Target Release:</strong> Q4 2026</p><hr><h2>1. Executive Summary</h2><p>Modern product teams lose dozens of hours every sprint bouncing between disconnected tools for drafting specs, design reviews, and engineering RFCs. <em>Ajaia Docs</em> unifies rich collaborative drafting, structured file attachments, and instant teammate sharing into a single, cohesive canvas.aodifidhfoonkkjkjkjkjkjhjkhkjknn</p><blockquote><p>\"Our goal is to make document creation as fast as thinking, with zero friction in teammate handoffs</p></blockquote><h2>2. Core Functional Requirements</h2><ul><li><p><strong>Rich Formatting Engine:</strong> Headings, clean typography, bold/italic accents, formatted lists, and code blocks.</p></li><li><p><strong>Native File Imports:</strong> Direct ingestion of Markdown and plaintext files straight into editable live docs.</p></li><li><p><strong>Lightweight Access Control:</strong> Distinct Owner, Editor, and Viewer permissions with real-time UI state reflect.</p></li><li><p><strong>Resilient Local Persistence:</strong> Automated debounced saving ensuring zero state loss across reloads.</p></li></ul><h2>3. Key Success Metrics</h2><ol><li><p>Document creation time decreased by <strong>45%</strong>.</p></li><li><p>Cross-functional review turnaround within <strong>24 hours</strong>.</p></li><li><p>Zero accidental document overwrite incidents via explicit access roles.</p></li></ol><pre><code>// Example Share Payload Contract\nPOST /api/documents/doc_1/share\n{\n  \"targetEmail\": \"bob@ajaia.io\",\n  \"accessLevel\": \"editor\"\n}</code></pre><p>Please review and leave feedback or suggest edits directly!</p>",
       "ownerId": "user_alice",
       "createdAt": "2026-10-18T10:00:00.000Z",
-      "updatedAt": "2026-10-20T08:30:00.000Z",
-      "wordCount": 195,
-      "characterCount": 1420,
+      "updatedAt": "2026-10-20T06:50:27.647Z",
+      "wordCount": 184,
+      "characterCount": 1403,
       "shares": [
         {
-          "id": "share_1",
-          "documentId": "doc_1",
-          "userId": "user_bob",
-          "accessLevel": "editor",
-          "sharedAt": "2026-10-18T11:00:00.000Z",
-          "sharedBy": "user_alice"
-        },
-        {
-          "id": "share_2",
+          "id": "share_1792479053318_d5p8",
           "documentId": "doc_1",
           "userId": "user_charlie",
           "accessLevel": "viewer",
-          "sharedAt": "2026-10-18T11:05:00.000Z",
+          "sharedAt": "2026-10-20T06:51:02.536Z",
           "sharedBy": "user_alice"
         }
       ],
@@ -340,12 +393,12 @@
     {
       "id": "doc_3",
       "title": "⚡ System Architecture & API Contracts",
-      "content": "<h1>System Architecture & API Contracts</h1>\n<p><strong>Owner:</strong> Charlie Davis &nbsp;|&nbsp; <strong>Confidentiality:</strong> Internal</p>\n<hr />\n<h2>1. Architectural Goals</h2>\n<p>Ensure reliable persistence, sub-millisecond route responses, and predictable role-based permission verification across all API endpoints.</p>\n<h2>2. Security & Role Matrix</h2>\n<ul>\n  <li><strong>Owner:</strong> Full read, write, rename, share management, and document deletion.</li>\n  <li><strong>Editor:</strong> Full read and write content updates. Cannot delete the document.</li>\n  <li><strong>Viewer:</strong> Strictly read-only access. Editor input controls are disabled.</li>\n</ul>",
+      "content": "<h1>System Architecture &amp; API Contracts</h1><p><strong>Owner:</strong> Charlie Davis &nbsp;|&nbsp; <strong>Confidentiality:</strong> Internal</p><hr><h2>1. Architectural Goals</h2><p>Ensure reliable persistence, sub-millisecond route responses, and predictable role-based permission verification across all API endpoints.</p><h2>2. Security &amp; Role Matrix</h2><ul><li><p><strong>Owner:</strong> Full read, write, rename, share management, and document deletion.</p></li><li><p><strong>Editor:</strong> Full read and write content updates. Cannot delete the document.</p></li><li><p><strong>Viewer:</strong> Strictly read-only access. Editor input controls are disabled.</p></li></ul>",
       "ownerId": "user_charlie",
       "createdAt": "2026-10-19T16:00:00.000Z",
-      "updatedAt": "2026-10-20T06:45:00.000Z",
-      "wordCount": 72,
-      "characterCount": 540,
+      "updatedAt": "2026-10-20T06:36:11.666Z",
+      "wordCount": 64,
+      "characterCount": 510,
       "shares": [
         {
           "id": "share_4",
