@@ -3,7 +3,8 @@
 **Candidate Name:** Pranjal Singh  
 **Role:** Full Stack Product Engineer  
 **Company:** Ajaia  
-**Repository Location:** `/Users/pranjalsingh/ajaia`  
+**Repository Location:** [https://github.com/pranjal9091/ajaia](https://github.com/pranjal9091/ajaia)  
+**Live Deployed URL:** [https://ajaia-xi.vercel.app](https://ajaia-xi.vercel.app)  
 **Local Preview URL:** [http://localhost:3000](http://localhost:3000)  
 **Walkthrough Video Script:** [WALKTHROUGH_SCRIPT.md](WALKTHROUGH_SCRIPT.md)  
 **Walkthrough Video Link:** [VIDEO_URL.txt](VIDEO_URL.txt)  

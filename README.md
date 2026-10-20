@@ -8,10 +8,14 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![TipTap](https://img.shields.io/badge/Editor-TipTap%20%2F%20ProseMirror-000000?style=flat-square)](https://tiptap.dev/)
 [![Tests](https://img.shields.io/badge/Tests-7%2F7%20Passing-brightgreen?style=flat-square)](tests/db.test.ts)
+[![Deployment](https://img.shields.io/badge/Live%20Demo-ajaia--xi.vercel.app-success?style=flat-square&logo=vercel)](https://ajaia-xi.vercel.app)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 *Built for the Ajaia Full Stack Product Engineer Assignment.*  
 A focused, full-stack document platform demonstrating rich-text drafting, file upload workflows, granular sharing access control, and zero-dependency atomic persistence.
+
+🌐 **Live Production URL:** [https://ajaia-xi.vercel.app](https://ajaia-xi.vercel.app)  
+💻 **GitHub Repository:** [https://github.com/pranjal9091/ajaia](https://github.com/pranjal9091/ajaia)
 
 [Quickstart](#-quickstart--local-setup) • [Reviewer Testing Guide](#-reviewer-testing-guide) • [Core Features](#-core-capabilities) • [Architecture](#-architecture--design-decisions) • [AI Workflow](#-ai-native-workflow)
 
