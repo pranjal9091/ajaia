@@ -1,0 +1,362 @@
+{
+  "users": [
+    {
+      "id": "user_alice",
+      "name": "Alice Walker",
+      "email": "alice@ajaia.io",
+      "avatar": "👩‍💼",
+      "title": "Product Lead",
+      "color": "#6366f1"
+    },
+    {
+      "id": "user_bob",
+      "name": "Bob Chen",
+      "email": "bob@ajaia.io",
+      "avatar": "👨‍🎨",
+      "title": "Design Lead",
+      "color": "#ec4899"
+    },
+    {
+      "id": "user_charlie",
+      "name": "Charlie Davis",
+      "email": "charlie@ajaia.io",
+      "avatar": "👨‍💻",
+      "title": "Engineering Lead",
+      "color": "#10b981"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_1792477872527_x1vrq",
+      "title": "Attachment Test Doc",
+      "content": "<p>Document with attachments</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:31:12.527Z",
+      "updatedAt": "2026-10-20T06:31:12.527Z",
+      "wordCount": 3,
+      "characterCount": 25,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477872526_j3up2",
+      "title": "Revocation Test Doc",
+      "content": "<p>Secret</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:31:12.526Z",
+      "updatedAt": "2026-10-20T06:31:12.526Z",
+      "wordCount": 1,
+      "characterCount": 6,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477872525_f6p6j",
+      "title": "Permission Test Doc",
+      "content": "<p>Updated by Bob the Editor</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:31:12.525Z",
+      "updatedAt": "2026-10-20T06:31:12.526Z",
+      "wordCount": 5,
+      "characterCount": 25,
+      "shares": [
+        {
+          "id": "share_1792477872525_ae1g",
+          "documentId": "doc_1792477872525_f6p6j",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-20T06:31:12.525Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_1792477872525_uc2m",
+          "documentId": "doc_1792477872525_f6p6j",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T06:31:12.525Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477872525_ed6jz",
+      "title": "Automated Test Document",
+      "content": "<h1>Testing Antigravity</h1><p>This is a paragraph with several words.</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:31:12.524Z",
+      "updatedAt": "2026-10-20T06:31:12.524Z",
+      "wordCount": 9,
+      "characterCount": 59,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477598675_5k0t2",
+      "title": "Attachment Test Doc",
+      "content": "<p>Document with attachments</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:26:38.675Z",
+      "updatedAt": "2026-10-20T06:26:38.675Z",
+      "wordCount": 3,
+      "characterCount": 25,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477598674_7h5zs",
+      "title": "Revocation Test Doc",
+      "content": "<p>Secret</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:26:38.674Z",
+      "updatedAt": "2026-10-20T06:26:38.674Z",
+      "wordCount": 1,
+      "characterCount": 6,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477598673_2wduy",
+      "title": "Permission Test Doc",
+      "content": "<p>Updated by Bob the Editor</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:26:38.673Z",
+      "updatedAt": "2026-10-20T06:26:38.674Z",
+      "wordCount": 5,
+      "characterCount": 25,
+      "shares": [
+        {
+          "id": "share_1792477598673_zk27",
+          "documentId": "doc_1792477598673_2wduy",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-20T06:26:38.673Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_1792477598673_fkks",
+          "documentId": "doc_1792477598673_2wduy",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T06:26:38.673Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477598672_uptw1",
+      "title": "Automated Test Document",
+      "content": "<h1>Testing Antigravity</h1><p>This is a paragraph with several words.</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:26:38.672Z",
+      "updatedAt": "2026-10-20T06:26:38.672Z",
+      "wordCount": 9,
+      "characterCount": 59,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477519806_p6hov",
+      "title": "Revocation Test Doc",
+      "content": "<p>Secret</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:25:19.806Z",
+      "updatedAt": "2026-10-20T06:25:19.806Z",
+      "wordCount": 1,
+      "characterCount": 6,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477519804_yykd1",
+      "title": "Permission Test Doc",
+      "content": "<p>Updated by Bob the Editor</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:25:19.804Z",
+      "updatedAt": "2026-10-20T06:25:19.805Z",
+      "wordCount": 5,
+      "characterCount": 25,
+      "shares": [
+        {
+          "id": "share_1792477519804_q3qp",
+          "documentId": "doc_1792477519804_yykd1",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-20T06:25:19.804Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_1792477519805_2r4q",
+          "documentId": "doc_1792477519804_yykd1",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T06:25:19.805Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477519804_7hgjl",
+      "title": "Automated Test Document",
+      "content": "<h1>Testing Antigravity</h1><p>This is a paragraph with several words.</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:25:19.803Z",
+      "updatedAt": "2026-10-20T06:25:19.803Z",
+      "wordCount": 9,
+      "characterCount": 59,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477503120_vvo13",
+      "title": "Revocation Test Doc",
+      "content": "<p>Secret</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:25:03.120Z",
+      "updatedAt": "2026-10-20T06:25:03.120Z",
+      "wordCount": 1,
+      "characterCount": 6,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477503119_wco01",
+      "title": "Permission Test Doc",
+      "content": "<p>Updated by Bob the Editor</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:25:03.119Z",
+      "updatedAt": "2026-10-20T06:25:03.120Z",
+      "wordCount": 5,
+      "characterCount": 25,
+      "shares": [
+        {
+          "id": "share_1792477503119_dnbv",
+          "documentId": "doc_1792477503119_wco01",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-20T06:25:03.119Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_1792477503120_0m01",
+          "documentId": "doc_1792477503119_wco01",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T06:25:03.120Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792477503119_kezye",
+      "title": "Automated Test Document",
+      "content": "<h1>Testing Antigravity</h1><p>This is a paragraph with several words.</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T06:25:03.118Z",
+      "updatedAt": "2026-10-20T06:25:03.118Z",
+      "wordCount": 9,
+      "characterCount": 59,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1",
+      "title": "🚀 Ajaia Product Spec: AI-Assisted Document Platform",
+      "content": "<h1>Ajaia Product Spec: AI-Assisted Document Platform</h1>\n<p><strong>Status:</strong> In Review &nbsp;|&nbsp; <strong>Author:</strong> Alice Walker &nbsp;|&nbsp; <strong>Target Release:</strong> Q4 2026</p>\n<hr />\n<h2>1. Executive Summary</h2>\n<p>Modern product teams lose dozens of hours every sprint bouncing between disconnected tools for drafting specs, design reviews, and engineering RFCs. <em>Ajaia Docs</em> unifies rich collaborative drafting, structured file attachments, and instant teammate sharing into a single, cohesive canvas.</p>\n<blockquote>\n  <p>\"Our goal is to make document creation as fast as thinking, with zero friction in teammate handoffs.\"</p>\n</blockquote>\n<h2>2. Core Functional Requirements</h2>\n<ul>\n  <li><strong>Rich Formatting Engine:</strong> Headings, clean typography, bold/italic accents, formatted lists, and code blocks.</li>\n  <li><strong>Native File Imports:</strong> Direct ingestion of Markdown and plaintext files straight into editable live docs.</li>\n  <li><strong>Lightweight Access Control:</strong> Distinct Owner, Editor, and Viewer permissions with real-time UI state reflect.</li>\n  <li><strong>Resilient Local Persistence:</strong> Automated debounced saving ensuring zero state loss across reloads.</li>\n</ul>\n<h2>3. Key Success Metrics</h2>\n<ol>\n  <li>Document creation time decreased by <strong>45%</strong>.</li>\n  <li>Cross-functional review turnaround within <strong>24 hours</strong>.</li>\n  <li>Zero accidental document overwrite incidents via explicit access roles.</li>\n</ol>\n<pre><code>// Example Share Payload Contract\nPOST /api/documents/doc_1/share\n{\n  \"targetEmail\": \"bob@ajaia.io\",\n  \"accessLevel\": \"editor\"\n}</code></pre>\n<p>Please review and leave feedback or suggest edits directly!</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-18T10:00:00.000Z",
+      "updatedAt": "2026-10-20T08:30:00.000Z",
+      "wordCount": 195,
+      "characterCount": 1420,
+      "shares": [
+        {
+          "id": "share_1",
+          "documentId": "doc_1",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-18T11:00:00.000Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_2",
+          "documentId": "doc_1",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-18T11:05:00.000Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [
+        {
+          "id": "att_1",
+          "documentId": "doc_1",
+          "filename": "ajaia_roadmap_q4.pdf",
+          "originalName": "ajaia_roadmap_q4.pdf",
+          "mimeType": "application/pdf",
+          "sizeBytes": 245760,
+          "uploadedAt": "2026-10-18T12:00:00.000Z",
+          "uploadedBy": "user_alice"
+        }
+      ]
+    },
+    {
+      "id": "doc_2",
+      "title": "🎨 Design System & Component Library RFC",
+      "content": "<h1>Design System & Component Library RFC</h1>\n<p><strong>Lead:</strong> Bob Chen &nbsp;|&nbsp; <strong>Collaborators:</strong> Alice Walker, Charlie Davis</p>\n<hr />\n<h2>Overview</h2>\n<p>We are standardizing our typography scale, elevation styles, and interactive states to deliver a top-tier desktop web experience inspired by Google Docs and modern productivity suites.</p>\n<h2>Design Tokens</h2>\n<ul>\n  <li><strong>Background Canvas:</strong> Warm neutral paper background with subtle drop-shadows.</li>\n  <li><strong>Brand Accents:</strong> Indigo (#6366f1) and Violet tones for focus rings and active states.</li>\n  <li><strong>Typography:</strong> Crisp Inter font with balanced line heights for long-form readability.</li>\n</ul>\n<blockquote>\n  <p>Every interactive element should respond with smooth micro-animations (&lt;150ms transitions).</p>\n</blockquote>",
+      "ownerId": "user_bob",
+      "createdAt": "2026-10-19T09:15:00.000Z",
+      "updatedAt": "2026-10-19T14:20:00.000Z",
+      "wordCount": 85,
+      "characterCount": 680,
+      "shares": [
+        {
+          "id": "share_3",
+          "documentId": "doc_2",
+          "userId": "user_alice",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-19T10:00:00.000Z",
+          "sharedBy": "user_bob"
+        }
+      ],
+      "attachments": []
+    },
+    {
+      "id": "doc_3",
+      "title": "⚡ System Architecture & API Contracts",
+      "content": "<h1>System Architecture & API Contracts</h1>\n<p><strong>Owner:</strong> Charlie Davis &nbsp;|&nbsp; <strong>Confidentiality:</strong> Internal</p>\n<hr />\n<h2>1. Architectural Goals</h2>\n<p>Ensure reliable persistence, sub-millisecond route responses, and predictable role-based permission verification across all API endpoints.</p>\n<h2>2. Security & Role Matrix</h2>\n<ul>\n  <li><strong>Owner:</strong> Full read, write, rename, share management, and document deletion.</li>\n  <li><strong>Editor:</strong> Full read and write content updates. Cannot delete the document.</li>\n  <li><strong>Viewer:</strong> Strictly read-only access. Editor input controls are disabled.</li>\n</ul>",
+      "ownerId": "user_charlie",
+      "createdAt": "2026-10-19T16:00:00.000Z",
+      "updatedAt": "2026-10-20T06:45:00.000Z",
+      "wordCount": 72,
+      "characterCount": 540,
+      "shares": [
+        {
+          "id": "share_4",
+          "documentId": "doc_3",
+          "userId": "user_alice",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-19T16:30:00.000Z",
+          "sharedBy": "user_charlie"
+        }
+      ],
+      "attachments": []
+    }
+  ]
+}
