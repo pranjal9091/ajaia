@@ -27,6 +27,144 @@
   ],
   "documents": [
     {
+      "id": "doc_1792479820448_8qeow",
+      "title": "Attachment Test Doc",
+      "content": "<p>Document with attachments</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:03:40.448Z",
+      "updatedAt": "2026-10-20T07:03:40.448Z",
+      "wordCount": 3,
+      "characterCount": 25,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479820447_8hq8f",
+      "title": "Revocation Test Doc",
+      "content": "<p>Secret</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:03:40.447Z",
+      "updatedAt": "2026-10-20T07:03:40.447Z",
+      "wordCount": 1,
+      "characterCount": 6,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479820446_zbomf",
+      "title": "Permission Test Doc",
+      "content": "<p>Updated by Bob the Editor</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:03:40.446Z",
+      "updatedAt": "2026-10-20T07:03:40.447Z",
+      "wordCount": 5,
+      "characterCount": 25,
+      "shares": [
+        {
+          "id": "share_1792479820446_n1hc",
+          "documentId": "doc_1792479820446_zbomf",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-20T07:03:40.446Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_1792479820447_dddy",
+          "documentId": "doc_1792479820446_zbomf",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T07:03:40.447Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479820446_mq8sb",
+      "title": "Automated Test Document",
+      "content": "<h1>Testing Antigravity</h1><p>This is a paragraph with several words.</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:03:40.445Z",
+      "updatedAt": "2026-10-20T07:03:40.445Z",
+      "wordCount": 9,
+      "characterCount": 59,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479776591_ltjyu",
+      "title": "Attachment Test Doc",
+      "content": "<p>Document with attachments</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:02:56.591Z",
+      "updatedAt": "2026-10-20T07:02:56.591Z",
+      "wordCount": 3,
+      "characterCount": 25,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479776591_ga134",
+      "title": "Revocation Test Doc",
+      "content": "<p>Secret</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:02:56.591Z",
+      "updatedAt": "2026-10-20T07:02:56.591Z",
+      "wordCount": 1,
+      "characterCount": 6,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479776589_4r8wb",
+      "title": "Permission Test Doc",
+      "content": "<p>Updated by Bob the Editor</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:02:56.589Z",
+      "updatedAt": "2026-10-20T07:02:56.590Z",
+      "wordCount": 5,
+      "characterCount": 25,
+      "shares": [
+        {
+          "id": "share_1792479776590_o9c5",
+          "documentId": "doc_1792479776589_4r8wb",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-20T07:02:56.590Z",
+          "sharedBy": "user_alice"
+        },
+        {
+          "id": "share_1792479776590_n1gf",
+          "documentId": "doc_1792479776589_4r8wb",
+          "userId": "user_charlie",
+          "accessLevel": "viewer",
+          "sharedAt": "2026-10-20T07:02:56.590Z",
+          "sharedBy": "user_alice"
+        }
+      ],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
+      "id": "doc_1792479776589_tz14p",
+      "title": "Automated Test Document",
+      "content": "<h1>Testing Antigravity</h1><p>This is a paragraph with several words.</p>",
+      "ownerId": "user_alice",
+      "createdAt": "2026-10-20T07:02:56.588Z",
+      "updatedAt": "2026-10-20T07:02:56.588Z",
+      "wordCount": 9,
+      "characterCount": 59,
+      "shares": [],
+      "attachments": [],
+      "currentUserRole": "owner"
+    },
+    {
       "id": "doc_1792478457854_stdcs",
       "title": "Sprint Retrospective",
       "content": "<h1>Sprint Retrospective</h1><p><strong>Sprint:</strong> 24 &nbsp;|&nbsp; <strong>Facilitator:</strong> Team Lead</p><hr><h2>🟢 What Went Well</h2><ul><li><p>Fast delivery speed using modern full-stack patterns.</p></li><li><p>Clean separation of UI, API handlers, and data persistence.</p></li></ul><h2>🟡 What Could Be Improved</h2><ul><li><p>Add real-time websocket presence cursors in the next iteration.</p></li></ul><h2>🎯 Action Items</h2><ol><li><p>Polish README and deployment steps.</p></li></ol>",
@@ -347,6 +485,14 @@
       "wordCount": 184,
       "characterCount": 1403,
       "shares": [
+        {
+          "id": "share_1",
+          "documentId": "doc_1",
+          "userId": "user_bob",
+          "accessLevel": "editor",
+          "sharedAt": "2026-10-18T11:00:00.000Z",
+          "sharedBy": "user_alice"
+        },
         {
           "id": "share_1792479053318_d5p8",
           "documentId": "doc_1",

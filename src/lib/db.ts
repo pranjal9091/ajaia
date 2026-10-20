@@ -8,7 +8,9 @@ interface DatabaseSchema {
   documents: DocumentItem[];
 }
 
-const DATA_DIR = path.join(process.cwd(), '.data');
+const DATA_DIR = process.env.VERCEL
+  ? path.join('/tmp', '.data')
+  : path.join(process.cwd(), '.data');
 const DB_FILE = path.join(DATA_DIR, 'db.json');
 export const UPLOADS_DIR = path.join(DATA_DIR, 'uploads');
 
@@ -190,24 +192,46 @@ class DatabaseService {
   }
 
   private ensureStorage(): void {
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
-    }
-    if (!fs.existsSync(UPLOADS_DIR)) {
-      fs.mkdirSync(UPLOADS_DIR, { recursive: true });
-    }
+    try {
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      if (!fs.existsSync(UPLOADS_DIR)) {
+        fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+      }
 
-    if (!fs.existsSync(DB_FILE)) {
-      const initial: DatabaseSchema = {
-        users: SEED_USERS,
-        documents: SEED_DOCUMENTS,
-      };
-      fs.writeFileSync(DB_FILE, JSON.stringify(initial, null, 2), 'utf8');
-      this.inMemoryDb = initial;
+      if (!fs.existsSync(DB_FILE)) {
+        // If repo seed exists, copy it, else initialize
+        const repoSeed = path.join(process.cwd(), '.data', 'db.json');
+        if (fs.existsSync(repoSeed)) {
+          const content = fs.readFileSync(repoSeed, 'utf8');
+          fs.writeFileSync(DB_FILE, content, 'utf8');
+          this.inMemoryDb = JSON.parse(content);
+          return;
+        }
+
+        const initial: DatabaseSchema = {
+          users: SEED_USERS,
+          documents: SEED_DOCUMENTS,
+        };
+        fs.writeFileSync(DB_FILE, JSON.stringify(initial, null, 2), 'utf8');
+        this.inMemoryDb = initial;
+      }
+    } catch {
+      // In-memory fallback if disk is not writable
+      if (!this.inMemoryDb) {
+        this.inMemoryDb = {
+          users: SEED_USERS,
+          documents: SEED_DOCUMENTS,
+        };
+      }
     }
   }
 
   private load(): DatabaseSchema {
+    if (this.inMemoryDb) {
+      return this.inMemoryDb;
+    }
     this.ensureStorage();
     try {
       const content = fs.readFileSync(DB_FILE, 'utf8');
@@ -225,12 +249,15 @@ class DatabaseService {
   }
 
   private save(data: DatabaseSchema): void {
-    this.ensureStorage();
     this.inMemoryDb = data;
-    // Atomic write via temp file
-    const tempFile = `${DB_FILE}.tmp.${Date.now()}`;
-    fs.writeFileSync(tempFile, JSON.stringify(data, null, 2), 'utf8');
-    fs.renameSync(tempFile, DB_FILE);
+    try {
+      this.ensureStorage();
+      const tempFile = `${DB_FILE}.tmp.${Date.now()}`;
+      fs.writeFileSync(tempFile, JSON.stringify(data, null, 2), 'utf8');
+      fs.renameSync(tempFile, DB_FILE);
+    } catch (err) {
+      console.warn('Storage write fallback to in-memory cache:', err);
+    }
   }
 
   public getUsers(): User[] {
